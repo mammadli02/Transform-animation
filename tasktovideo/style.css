@@ -1,0 +1,38 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.wrapper{
+    margin:  50px auto;
+    width: 300px;
+    padding: 50px;
+    height: 300px;
+}
+.wrapper>.box{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  animation: movied 3s linear .1s infinite ;
+}
+@keyframes movied{
+    0% {
+        transform:  scale(0.5);
+      }
+      25% {
+        transform:  scale(1);
+      }
+      50% {
+        transform:  scale(1.5);
+      }
+      75% {
+        transform:  scale(1);
+      }
+      100% {
+        transform:  scale(0.5);
+      }
+     
+}
+

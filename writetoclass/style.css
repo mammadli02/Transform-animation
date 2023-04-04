@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+
+  margin: 50px 0;
+}
+
+.heart>span {
+  font-size: 60px;
+}
+
+.heart>span>p {
+  transform: translate(35px, -80px);
+  font-size: 30px;
+  width: 10%;
+}
+
+.wrapper1 {
+  border-bottom: 5px solid green;
+  position: relative;
+}
+
+.wrapper1 .box {
+  position: absolute;
+  bottom: 0;
+  animation-name: car;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+
+.wrapper1 .box i {
+  font-size: 30px;
+  color: black;
+}
+
+@keyframes car {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: calc(100% - 50px);
+
+  }
+}
+
+.wrapper2 {
+  margin: 50px;
+  border: 1px solid black;
+  width: 600px;
+  position: relative;
+  height: 400px;
+}
+
+.wrapper2>.box2 {
+  width: 100px;
+  position: absolute;
+  height: 100px;
+  background-color: rgb(145, 145, 218);
+  animation-name: movied;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+
+
+}
+
+@keyframes movied {
+  0% {
+    left: 0%;
+    top: 0%;
+  }
+
+  25% {
+    left: calc(100% - 100px);
+    top: 0%;
+  }
+
+  50% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+  }
+
+  75% {
+    left: 0%;
+    top: calc(100% - 100px);
+  }
+
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
+
+.wrapper3 {
+  margin: 50px 20px;
+  width: 200px;
+
+  height: 100px;
+
+
+}
+
+.wrapper3>.box3 {
+  height: 100px;
+  width: 200px;
+  background-color: rgb(152, 211, 211);
+  transition: width 2s linear, background-color 1s linear,  height 1s linear;
+
+}
+
+.wrapper3>.box3>p {
+  font-size: 20px;
+  color: yellow;
+  text-align: center;
+
+}
+
+.wrapper3>.box3:hover {
+  height: 400px;
+  width: 200%;
+  background-color: green;
+
+}
+
+.wrapper3>.box3:hover p {
+  color: orange;
+  font-size: 25px;
+
+}
